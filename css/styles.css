@@ -1,3 +1,62 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* end of RESET */
+.container {
+  max-width: 100%;
+}
+
 body {
   margin: 0;
   text-align: center;
@@ -27,22 +86,17 @@ p {
 
 hr {
   border: dotted #AAD8D3 6px;
-  border-bottom: none;
   width: 4%;
-  margin: 100px auto;
+  margin: 50px auto;
 }
 
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.125rem;
   color: #51C4D3;
-  padding-bottom: 10px;
+  padding-bottom: 3%;
   width: 60%;
   margin: auto;
-}
-
-.top-h2 {
-  margin: 0 auto 45px;
 }
 
 h3 {
@@ -50,40 +104,44 @@ h3 {
   color: #126E82;
 }
 
-.top-container {
+#top-container {
   background-color: #D8E3E7;
   position: relative;
-  padding-top: 100px;
+  padding-top: 2%;
 }
 
 .middle-container {
   margin: 50px 0;
 }
 
-.bottom-container {
+#bottom-container {
   background-color: #51c4d3;
   padding: 50px 0 20px;
 }
 
 .top-cloud {
-  position: absolute;
-  right: 30px;
-  top: 20px;
+  position: relative;
+  left: 33%;
+  top: 5%;
   width: 25%;
 }
 
 .bottom-cloud {
-  position: absolute;
-  left: 35px;
-  bottom: 174px;
+  position: relative;
+  bottom: 1%;
   width: 25%;
+  right: 37%;
 }
 
 .mountain {
   width: 70%;
+  position: relative;
+  display: block;
+  margin: auto;
+  left: 10%;
 }
 
-.profile {
+#profile {
   margin-bottom: 30px;
 }
 
@@ -110,6 +168,7 @@ h3 {
   margin: 40px auto 60px;
 }
 
+/* Custom Button */
 .btn {
   background: #00ADB5;
   background-image: -webkit-linear-gradient(top, #00ADB5, #393E46);
@@ -133,6 +192,7 @@ h3 {
   display: inline-block;
   cursor: pointer;
   text-align: center;
+  margin-bottom: 2%;
 }
 
 .btn:hover {
@@ -148,12 +208,14 @@ h3 {
   text-decoration: none;
 }
 
+/* End of Custom Button */
 .footer-link {
   color: #1a3336;
   font-family: Montserrat, sans-serif;
   margin: 10px 20px;
 }
 
+/* Link Styling */
 a {
   color: #51C4D3;
   text-decoration: none;
@@ -163,53 +225,38 @@ a:hover {
   color: #b1e7ef;
 }
 
+/* End of Link Styling */
 .copywrite {
   color: #d8e3e7;
   font-size: 0.75rem;
   padding: 15px 0 0;
 }
 
-@media all and (min-width: 800px) {
+/* Mobile first style - Put what changes you want for wider viewports in the media query*/
+@media only screen and (min-width: 750px) {
   h1 {
-    font-size: 5.625rem;
+    font-size: 5rem;
   }
 
   h2 {
-    font-size: 1.5625rem;
-  }
-
-  .profile-pic {
-    margin: 50px auto 50px;
-  }
-
-  .intro {
-    width: 30%;
-    margin: 20px auto;
-    text-align: left;
+    font-size: 1.3rem;
   }
 
   .top-cloud {
-    right: 170px;
-    width: 13%;
+    position: relative;
+    left: 33%;
+    top: 12%;
+    width: 15%;
   }
 
   .bottom-cloud {
-    width: 13%;
-    left: 150px;
-    top: 450px;
-  }
-
-  .skill-row {
-    width: 50%;
-    margin: 100px auto 180px;
-    text-align: left;
-  }
-
-  hr {
-    margin: 100px auto;
+    position: relative;
+    bottom: 10%;
+    width: 15%;
+    right: 37%;
   }
 
   .mountain {
-    width: fit-content;
+    width: 30%;
   }
 }
