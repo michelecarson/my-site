@@ -198,7 +198,7 @@ h3 {
   color: #51C4D3;
   width: 20%;
   position: absolute;
-  margin-left: -3%;
+  margin-left: 3%;
 }
 
 /* Custom Button */
@@ -329,4 +329,12 @@ a:hover {
     position: absolute;
     margin-left: 7%;
   }
+
+  #home-text {
+    color: #51C4D3;
+    width: 20%;
+    position: absolute;
+    margin-left: -3%;
+  }
+
 }
