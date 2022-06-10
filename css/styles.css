@@ -194,6 +194,13 @@ h3 {
   margin: 40px auto 60px;
 }
 
+#home-text {
+  color: #51C4D3;
+  width: 20%;
+  position: absolute;
+  margin-left: -3%;
+}
+
 /* Custom Button */
 .btn {
   background: #00ADB5;
