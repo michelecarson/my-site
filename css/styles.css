@@ -74,8 +74,9 @@ body {
 }
 
 #home-button {
-  width: 20%;
+  width: 10%;
   position: absolute;
+  padding-top: 3%;
   margin-left: 8%;
 }
 
@@ -194,12 +195,12 @@ h3 {
   margin: 40px auto 60px;
 }
 
-#home-text {
+/* #home-text {
   color: #51C4D3;
   width: 20%;
   position: absolute;
   margin-left: 3%;
-}
+} */
 
 /* Custom Button */
 .btn {
@@ -330,11 +331,11 @@ a:hover {
     margin-left: 7%;
   }
 
-  #home-text {
+  /* #home-text {
     color: #51C4D3;
     width: 20%;
     position: absolute;
     margin-left: -3%;
-  }
+  } */
 
 }
