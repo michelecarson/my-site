@@ -70,15 +70,14 @@ body {
 
 .navbar-light {
   background-color: #d8e3e7;
-  padding-bottom: 20%;
 }
 
-#home-button {
-  width: 10%;
-  position: absolute;
-  padding-top: 3%;
-  margin-left: 8%;
+a.navbar-brand {
+  margin-left: 6%;
+  margin-top: 2%;
 }
+
+#home-button {}
 
 h1 {
   font-family: 'Sacramento', cursive;
@@ -201,7 +200,6 @@ h3 {
   position: absolute;
   margin-left: 3%;
 } */
-
 /* Custom Button */
 .btn {
   background: #00ADB5;
@@ -321,21 +319,10 @@ a:hover {
 
   .navbar-light {
     background-color: #d8e3e7;
-    padding-top: 3%;
-    padding-bottom: 5%;
   }
 
-  #home-button {
-    width: 5%;
-    position: absolute;
-    margin-left: 7%;
+  a.navbar-brand {
+    margin-left: 6%;
+    margin-top: 2%;
   }
-
-  /* #home-text {
-    color: #51C4D3;
-    width: 20%;
-    position: absolute;
-    margin-left: -3%;
-  } */
-
 }
